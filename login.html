@@ -104,7 +104,7 @@
         form.addEventListener("submit", function(e){
             e.preventDefault()
             console.log(id.value, pw.value)
-            fetch('http://localhost:3090/users').then(function(res){
+            fetch('http://bamsaengki.gq/api/users').then(function(res){
                 return res.json()
                 
             }).then(function(res){
