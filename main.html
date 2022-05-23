@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bamsaengki</title>
+</head>
+<body>
+
+    <!-- 메인 -->
+    <div style="width: 100%; height : 100%;">
+        
+        <!-- 상단바 -->
+        <div style="width: 100%; height: 10%; justify-content: center; display: flex; background-color: gray ; background-color: rgba(128, 128, 128, 0.3);">
+
+          <div style="width: 100%; height: 100%; flex-direction: row; justify-content: center; display: flex;" >
+                    <!-- BamLog -->
+                    <div onclick="location.href='/'" style="width : 10%; height: 100% ;display: flex; margin-left : 1%; margin-top : 0.1%; justify-content: left;">
+                    <p style="font-size: 20px; font-weight:bold; ">BamLog</p>
+                    </div>
+                    
+                    <!-- 빈공간 -->
+                    <div style="width:70%;height: 100%;display: flex;">
+                    
+                    </div>
+
+                    <!-- 검색 -->
+                    <div style="width : 10%; height: 67px; display: flex; justify-content: center; margin-top : 0.5%;">
+                        <p>검색</p>
+                        
+                    </div>
+
+                    <!-- 회원가입 -->
+
+                    <div onclick="location.href='/signup'" style="width :10%;height : 67px; display: flex; justify-content: center; margin-top: 0.5%;">
+                        <p>
+                            회원가입
+                        </p>   
+                    </div>
+
+
+                    <!-- 로그인 -->
+                    <div onclick="location.href='/login'" style="width : 10%;height : 67px; display: flex; justify-content: center; margin-top: 0.5%;">
+                        <p style="vertical-align: bottom; align-items: center;">
+                            로그인
+                        </p>   
+                    </div>
+            </div>
+        </div>
+
+        <!-- 일간,주간 게시물 선택  -->
+        <div style="width: 100%; height: 10%; display: flex; justify-content: left; margin-top: 1%; margin-bottom: 1%; margin-left: 1%;;">
+            <div onclick="location.href='/main'" style="width:5%; height : 100%; display : flex; justify-content: center; margin-right: 1%;">
+                <p>머쓱해용</p>
+            </div>
+            <div onclick="location.href='/nolja'" style="width:5%; height : 100%; display : flex; justify-content: center;">
+                <p>놀자에용</p>
+            </div>
+           
+        </div>
+
+
+
+
+        <!-- 메인페이지 영역 -->
+        <div style="width:100% ;display : flex; justify-content: center; flex-direction: column; ">
+             <!--  첫째줄 -->
+             <div style="width: 100%;display: flex; justify-content: center; flex-direction: row; margin-bottom: 2%;">
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 4%; margin-right: 2%;  border-radius: 10px;">
+                    <form ></form>
+                    
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400; ">
+                    내용
+                </div>
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 4%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+            </div>
+
+            <!-- 둘째 줄 -->
+            <div style="width: 100%;display: flex; justify-content: center; flex-direction: row; margin-bottom: 2%;">
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 4%; margin-right: 2%; border: 0.5px solid #ff4400; ">
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400; ">
+                    내용
+                </div>
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 4%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+            </div>
+
+            <!-- 셋째 줄 -->
+            <div style="width: 100%;display: flex; justify-content: center; flex-direction: row; margin-bottom: 2%;">
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 4%; margin-right: 2%; border: 0.5px solid #ff4400; ">
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400; ">
+                    내용
+                </div>
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 2%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+
+                <div style="width: 20%; height : 200px; justify-content: center; display : flex; margin-left : 2%; margin-right: 4%; border: 0.5px solid #ff4400;">
+                    내용
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+    //    let result = fetch('http://localhost:3090/portfolio',{
+       let result = fetch('https://bamsaengki.gq/portfolio',{ 
+           method : 'get'
+       })
+       
+    result.then(function(response){
+        console.log('response', response)
+        console.log('header', response.headers.get('Content-Type'))
+        return response.text()
+    }).then(function(text){
+        console.log('got text', text)
+    }).catch(function(ex){
+        console.log('failed', ex)
+    })
+    </script>
+</body>
+</html>
